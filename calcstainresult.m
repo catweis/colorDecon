@@ -17,4 +17,3 @@ if ~isempty(funContrast)
 end
 
 end
-

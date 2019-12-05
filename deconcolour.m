@@ -1,15 +1,15 @@
-
 function [Stains] = deconcolour(imageIn, M, removeBlack, funContrast, vis, varargin)
 
 %% input layer
-if ~exist('OnOff'), vis = true; end
-
-if size(imageIn,3) > 3, imageIn = imageIn(:,:,1:3); end 
+if exist('vis')==0, vis = true; end
 
 if ~exist('removeBlack'), removeBlack = true; end
 
 if ~exist('funContrast'), funContrast = []; end
 
+if exist('imageIn') == 0, imageIn = imread('testImage.jpg'); end
+
+if size(imageIn,3) > 3, imageIn = imageIn(:,:,1:3); end 
 Imax = 256;
 
 %% remove black image-parts
@@ -18,7 +18,7 @@ if removeBlack
 end
 
 %% define the color values
-if ~exist('M'), 
+if exist('M')~=1 
     %   R      G     B 
     M = [0.18, 0.20, 0.08; ... % Hematoxylin
         0.01, 0.13, 0.01; ...  % Eosin
@@ -33,7 +33,7 @@ MNorm = [M(1,:)/norm(M(1,:));...
 imageOD = -log10((double(imageIn)+1)./Imax);
 
 %% convert the image to matrix with values per pixel
-imageOD = reshape(imageOD,[],3)';
+imageOD = reshape(imageOD,3,[]);
 
 %% calculate the color deconvolution
 imageDecon = M \ imageOD;
@@ -56,4 +56,3 @@ if vis
 end
     
 end
-
