@@ -1,6 +1,5 @@
 
 import removeblack as rb
-import calcstainresult as calcstain
 import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
@@ -50,10 +49,18 @@ def deconcolour(imageIn=[], M=[], removeBlack=True, funContrast=[], vis=True):
 #%% calculate the color deconvolution OD = CM -> C = OD M^-1
     imageDecon = np.dot(imageOD, np.linalg.pinv(M)) 
 
-#%% convert the color-deconvolution results to a staining result
-    imageDecon = calcstain.calcstainresult(imageDecon, Imax, funContrast);
-    imageDecon = np.reshape(imageDecon, (sz[0], sz[1], numb_stains))
+#%% convert the color-deconvolution results to a staining result  
+    # reverse deconvolution
+    imageDecon = Imax * np.exp(-imageDecon)
+    imageDecon = np.clip(imageDecon, 0, 255)
+    imageDecon = Imax - np.uint8(imageDecon)
     
+    # apply constrast stretching
+
+    # reshape to images    
+    imageDecon = np.reshape(imageDecon, (sz[0], sz[1], numb_stains))
+
+
 #%% output layer  
     if vis:
         ax1 = plt.subplot(211)
@@ -66,5 +73,8 @@ def deconcolour(imageIn=[], M=[], removeBlack=True, funContrast=[], vis=True):
             ax2.set_title('staining'+str(i+1))
             
         plt.show()
+        
+#%% return
+        return imageDecon
         
         
