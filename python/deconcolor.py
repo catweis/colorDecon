@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 
 
-def deconcolour(imageIn=[], M=[], removeBlack=True, funContrast=[], vis=True):
+def deconcolor(imageIn=[], M=[], removeBlack=True, funContrast=[], vis=True):
       
 #%% input layer
     # input image
