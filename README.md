@@ -6,7 +6,7 @@ _deconcolour_:<br>
 applies the color deconvolution algorithm on a given histological image _imageIn_ of size _MxNxK_ where _M_ and _N_ are the number of rows and columns respectively and _K=3_ refers to the Red, Green, Blue (RGB) channels. If no image specified an example image _testImage.jpg_ is used. A stain filter matrix **M** might be profided of size _LxK_ where _L_ refers to the combination of stains to be extracted from the original image. As default **M** is chosen from Ruifrok et al. (2001) [1] for the stains hematoxylin, eosin and diaminobenzidine (DAB). The function returns the deconvolution image of size _MxNxL_.
 
 _removeBlack_:<br>
-This provides an optional removal of black image parts ("<"5) from the original image. _replaceValue_ is the _uint8_ scalar to replace black pixels. As default _replaceValue=255_ (white). 
+This provides an optional removal of black image parts (<5) from the original image. _replaceValue_ is the _uint8_ scalar to replace black pixels. As default _replaceValue=255_ (white). 
 
 ## Authors
 Dr. med. Cleo-Aron Weis, M.Sc. (<Cleo-Aron.Weis@medma.uni-heidelberg.de>)<br>
