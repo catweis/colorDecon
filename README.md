@@ -16,3 +16,4 @@ Marlen Runz, M.Sc (<Marlen.Runz@medma.uni-heidelberg.de>)
 [1] [Ruifrok, A. C., & Johnston, D. A. (2001). Quantification of histochemical staining by color deconvolution](http://www.ncbi.nlm.nih.gov/pubmed/11531144)
 
 [2] [Hidalgo-Gavira, N., Mateos, J., Vega, M., Molina, R., & Katsaggelos, A. K. (2018). Fully automated blind color deconvolution of histopathological images](https://doi.org/10.1007/978-3-030-00934-2_21)
+
