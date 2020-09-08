@@ -1,5 +1,5 @@
 # Color Deconvolution of Histopathological Images
-This project implements the algorithm to deconvolve the color information of a histopathological RGB image by calculating the contribution of each of the applied stains (e.g. Hematoxylin, Eosin, DAB) given. The algorithm is based on the publications by Ruifrok et al. (2001)[1] and Hidalgo-Gavira et al. (2018)[2] 
+Implementation of color deconvolution for histopathological RGB images by calculation of the contribution of each of the applied stains (e.g. Hematoxylin, Eosin, DAB) given. The algorithm is based on the publications by Ruifrok et al. (2001) [1] and Hidalgo-Gavira et al. (2018) [2]
 
 ## Usage
 _deconcolour_:<br>
@@ -13,6 +13,7 @@ Dr. med. Cleo-Aron Weis, M.Sc. (<Cleo-Aron.Weis@medma.uni-heidelberg.de>)<br>
 Marlen Runz, M.Sc (<Marlen.Runz@medma.uni-heidelberg.de>)
 
 ## References
-[Ruifrok, A. C., & Johnston, D. A. (2001). Quantification of histochemical staining by color deconvolution](http://www.ncbi.nlm.nih.gov/pubmed/11531144)
+[1] [Ruifrok, A. C., & Johnston, D. A. (2001). Quantification of histochemical staining by color deconvolution](http://www.ncbi.nlm.nih.gov/pubmed/11531144)
 
-[Hidalgo-Gavira, N., Mateos, J., Vega, M., Molina, R., & Katsaggelos, A. K. (2018). Fully automated blind color deconvolution of histopathological images](https://doi.org/10.1007/978-3-030-00934-2_21)
+[2] [Hidalgo-Gavira, N., Mateos, J., Vega, M., Molina, R., & Katsaggelos, A. K. (2018). Fully automated blind color deconvolution of histopathological images](https://doi.org/10.1007/978-3-030-00934-2_21)
+
