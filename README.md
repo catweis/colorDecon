@@ -13,5 +13,6 @@ Dr. med. Cleo-Aron Weis, M.Sc. (<Cleo-Aron.Weis@medma.uni-heidelberg.de>)<br>
 Marlen Runz, M.Sc (<Marlen.Runz@medma.uni-heidelberg.de>)
 
 ## References
-[1]: Ruifrok, A. C., & Johnston, D. A. (2001). Quantification of histochemical staining by color deconvolution. Analytical and Quantitative Cytology and Histology, 23(4), 291–299. Retrieved from http://www.ncbi.nlm.nih.gov/pubmed/11531144<br>
-[2]: Hidalgo-Gavira, N., Mateos, J., Vega, M., Molina, R., & Katsaggelos, A. K. (2018). Fully automated blind color deconvolution of histopathological images. Lecture Notes in Computer Science (Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics), 11071 LNCS, 183–191. https://doi.org/10.1007/978-3-030-00934-2_21
+[Ruifrok, A. C., & Johnston, D. A. (2001). Quantification of histochemical staining by color deconvolution](http://www.ncbi.nlm.nih.gov/pubmed/11531144)
+
+[Hidalgo-Gavira, N., Mateos, J., Vega, M., Molina, R., & Katsaggelos, A. K. (2018). Fully automated blind color deconvolution of histopathological images](https://doi.org/10.1007/978-3-030-00934-2_21)
