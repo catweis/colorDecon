@@ -9,8 +9,8 @@ _removeBlack_:<br>
 This provides an optional removal of black image parts (<5) from the original image. _replaceValue_ is the _uint8_ scalar to replace black pixels. As default _replaceValue=255_ (white). 
 
 ## Authors
-Dr. med. Cleo-Aron Weis, M.Sc. (<Cleo-Aron.Weis@medma.uni-heidelberg.de>)<br>
-Marlen Runz, M.Sc (<Marlen.Runz@medma.uni-heidelberg.de>)
+Dr. med. Cleo-Aron Weis, M.Sc. (<Cleo-Aron.Weis@med.uni-heidelberg.de>)<br>
+Marlen Runz, M.Sc (<Marlen.Runz@uni-heidelberg.de>)
 
 ## References
 [1] [Ruifrok, A. C., & Johnston, D. A. (2001). Quantification of histochemical staining by color deconvolution](http://www.ncbi.nlm.nih.gov/pubmed/11531144)
